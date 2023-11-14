@@ -69,7 +69,7 @@ public class Main {
             }
             return true;
         }
- //Fibonaci
+   //Fibonaci
     static void fibonacci(int n){
         int a = 0, b = 1;
 
