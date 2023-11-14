@@ -47,6 +47,10 @@ public class Main {
         } else {
             System.out.println(number + " không là số nguyên tố.");
         }
+
+        fibonacci(10);
+        //Find value in fibonacci;
+        System.out.println(fibonacciCheck(8));
     }
     //function
     static void sayHello(String msg){
@@ -65,6 +69,32 @@ public class Main {
             }
             return true;
         }
- //sda
+ //Fibonaci
+    static void fibonacci(int n){
+        int a = 0, b = 1;
+
+        for (int i = 1; i <  n;i++) {
+                int c = a + b;
+                if (isPrime(c)) {
+                    System.out.println(c + " là số nguyên tố.");
+                } else {
+                    System.out.println(c + " không là số nguyên tố.");
+
+            }
+            a = b;
+            b = c;
+        }
+    }
+   //Xac dinh vi tri va hien thi gia tri trong day so Fibonacci
+    static int fibonacciCheck(int n){
+        int a = 0, b = 1 ,to = 0;
+        for (int i = 0 ; i < n - 1 ; i++){
+                to = a + b;
+                a = b ;
+                b = to;
+        }
+        return to;
+
+    }
 
 }
