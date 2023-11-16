@@ -15,11 +15,11 @@ public class Product {
         this.category = category;
     }
     
-
+    //Methods
     public void UpQty(int amount) {
         this.qty += amount;
     }
-    //Methods
+    
     public void downQty(int amount) {
         if (amount <= this.qty) {
             this.qty -= amount;
