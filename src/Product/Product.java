@@ -14,50 +14,12 @@ public class Product {
         this.qty = qty;
         this.category = category;
     }
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public float getPrice() {
-        return productPrice;
-    }
-
-    public void setPrice(float productPrice) {
-        this.productPrice = productPrice;
-    }
-
-    public int getQuantity() {
-        return qty;
-    }
-
-    public void setQuantity(int qty) {
-        this.qty = qty;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
+    
+    //Methods
     public void UpQty(int amount) {
         this.qty += amount;
     }
-    //Methods
+    
     public void downQty(int amount) {
         if (amount <= this.qty) {
             this.qty -= amount;
