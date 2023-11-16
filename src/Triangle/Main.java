@@ -14,7 +14,7 @@ public class Main {
 
         System.out.print("Nhập chiều dài cạnh c: ");
         int canhC = scan.nextInt();
-        //////////////////////////////
+        ///////////////////////////////
             TamGiac i = new TamGiac(canhA,canhB,canhC);
             if (i.isTriangle()){
             System.out.println("Chu vi của hình tam giác là: " + i.perimeter());

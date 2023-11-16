@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TamGiac {
     int canhA,canhB,canhC;
 
-    //constructor
+    ///constructor
     public TamGiac(int canhA,int canhB,int canhC){
         this.canhA = canhA;
         this.canhB = canhB;
