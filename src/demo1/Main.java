@@ -1,4 +1,5 @@
 package demo1;
+import demo2.Bike;
 
 public class Main {
     public static void main(String[] args){
@@ -21,6 +22,10 @@ public class Main {
         c.printColor();
         c1.printColor();
         ////////////////
+        //Use package another location;
+        Bike b = new Bike();
+        //truyen props cho bien private.
+        b.setBrand("Yamaha");
 
     }
 }
