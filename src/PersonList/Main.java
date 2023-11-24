@@ -18,15 +18,15 @@ public class Main {
 //        p.inputInfo();
 //        p.printInfo();
 //
-//        Student s = new Student();
-//        s.inputInfo();
-//        s.printInfo();
-//        if(s.checkScore()){
-//            System.out.println(">>>>>>>>>>Ban da dc hoc bong<<<<<<<<<<<");
-//        }else {
-//            System.out.println(">>>>>>>>>>Ban da truot hoc bong<<<<<<<<");
-//        }
-//
+        Student s = new Student();
+        s.inputInfo();
+        s.printInfo();
+        if(s.checkScore()){
+            System.out.println(">>>>>>>>>>Ban da dc hoc bong<<<<<<<<<<<");
+        }else {
+            System.out.println(">>>>>>>>>>Ban da truot hoc bong<<<<<<<<");
+        }
+
         Teacher t = new Teacher();
         t.inputInfo();
         t.printInfo();
