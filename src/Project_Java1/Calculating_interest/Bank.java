@@ -1,4 +1,4 @@
-package Calculating_interest;
+package Project_Java1.Calculating_interest;
 
 public class Bank {
     private double balance;

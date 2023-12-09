@@ -1,4 +1,4 @@
-package Flight;
+package Project_Java1.Flight;
 
 public class Main {
     public static void main(String[] args) {

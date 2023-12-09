@@ -1,4 +1,4 @@
-package Flight;
+package Project_Java1.Flight;
 
 public class Flight {
     private int number;
