@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listClass.ListClassController">
+   <children>
+      <TextField fx:id="className" layoutX="14.0" layoutY="46.0" prefHeight="39.0" prefWidth="260.0" promptText="Class Name" />
+      <TextField fx:id="classRoom" layoutX="14.0" layoutY="128.0" prefHeight="39.0" prefWidth="260.0" promptText="Class Room" />
+      <TextField fx:id="classId" layoutX="14.0" layoutY="218.0" prefHeight="39.0" prefWidth="260.0" promptText="Class ID" />
+      <DatePicker fx:id="dayStart" layoutX="14.0" layoutY="312.0" prefHeight="39.0" prefWidth="260.0" promptText="Day start" />
+      <ChoiceBox fx:id="choiceBox" layoutX="14.0" layoutY="405.0" prefHeight="39.0" prefWidth="155.0" />
+      <Button fx:id="btn" layoutX="88.0" layoutY="512.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: #0B5ED7; -fx-font-weight: bold;" text="Submit" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <padding>
+            <Insets bottom="10.0" left="13.0" right="13.0" top="10.0" />
+         </padding></Button>
+      <ListView fx:id="list" layoutX="279.0" layoutY="48.0" prefHeight="549.0" prefWidth="519.0" />
+      <Text layoutX="522.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Class List" />
+      <Text layoutX="14.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Type:" />
+   </children>
+</Pane>
