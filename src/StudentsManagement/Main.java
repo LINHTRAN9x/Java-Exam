@@ -113,7 +113,7 @@ public class Main {
                 System.out.println("Rename: ");
                 String name = scan.nextLine();
                 student.setName(name);
-                System.out.println("ReDateOfBirht: ");
+                System.out.println("ReDateOfBirth: ");
                 String dob = scan.nextLine();
                 student.setDateOfBirth(dob);
                 System.out.println("ReAddress: ");

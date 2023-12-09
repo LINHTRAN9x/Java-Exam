@@ -1,4 +1,4 @@
-package demo3;
+package demo3.extendss;
 
 public class SheepDog extends Dog{
     //ke thua dog va animal

@@ -1,4 +1,4 @@
-package demo4;
+package demo4.abstractClass;
 
 public class Male extends Person {
     @Override

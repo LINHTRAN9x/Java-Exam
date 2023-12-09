@@ -1,4 +1,4 @@
-package demo4;
+package demo4.abstractClass;
 
 public abstract class Person {
     private String name;

@@ -1,4 +1,4 @@
-package demo3;
+package demo3.extendss;
 
 public class Main {
     public static void main(String[] args){

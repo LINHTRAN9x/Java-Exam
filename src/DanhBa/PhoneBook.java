@@ -1,9 +1,7 @@
 package DanhBa;
-import demo4.Person;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 class PhoneBook extends Phone {
     public ArrayList<PhoneNumber> PhoneList = new ArrayList<>();

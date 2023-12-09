@@ -1,4 +1,4 @@
-package demo5;
+package demo5.Interface;
 
 public class Student implements StudentInterface,AptechInterface{
     @Override
@@ -8,6 +8,7 @@ public class Student implements StudentInterface,AptechInterface{
     public  void playGame(){};
     @Override
     public void code(String s){};
+
 }
 
 

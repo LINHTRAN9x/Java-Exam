@@ -1,4 +1,4 @@
-package demo5.INewsTets;
+package demo5.Interface.INewsTets;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package demo5;
+package demo5.Interface;
 
 public class Main {
     public static void main(String[] args) {
