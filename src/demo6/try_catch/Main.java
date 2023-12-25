@@ -1,4 +1,4 @@
-package demo6;
+package demo6.try_catch;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Main {
             int y = 0;
             System.out.println("x : y = ");
             if (y < 5){
-                throw new ArithmeticException("Khong duoc chia be hon 5!"); //Chu dong phat ra ngoai le.
+                throw new ArithmeticException("Khong duoc chia be hon 5!"); //throw :Chủ động phát ra ngoại lệ.
             }
             int z = x/y;
             System.out.println(z);

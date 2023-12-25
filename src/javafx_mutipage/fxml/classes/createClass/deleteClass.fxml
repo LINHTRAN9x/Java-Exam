@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="javafx_mutipage.controllers.classes.DeleteController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" style="-fx-border-radius: 50%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="72.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure delete class:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnYes" layoutX="72.0" layoutY="111.0" mnemonicParsing="false" text="Yes" />
+      <Button fx:id="btnNo" layoutX="288.0" layoutY="111.0" mnemonicParsing="false" text="No" />
+      <Text fx:id="txtN" layoutX="150.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?" />
+   </children>
+</Pane>

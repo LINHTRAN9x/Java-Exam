@@ -15,7 +15,7 @@ public class Bike {
         this.brand = brand;
     }
 
-    ////////get & set :truy cap vao ham da set private.
+    ////////get & set :truy cap vao ham da set private,tưởng tượng là đã quyền private rồi nhưng tôi sẽ cho phép bạn truy cập vào đc nếu bạn có key get...set thì vẫn vào đc .
     public int getYear(){
         return year;
     }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_mutipage.controllers.student.EditController">
+   <children>
+      <Pane layoutX="194.0" layoutY="17.0" prefHeight="556.0" prefWidth="407.0" style="-fx-border-style: solid; -fx-border-color: #D8DCE1; -fx-background-color: #fff; -fx-border-radius: 10px;">
+         <children>
+            <Button layoutX="20.0" layoutY="479.0" mnemonicParsing="false" onAction="#saveStudent" prefHeight="48.0" prefWidth="367.0" style="-fx-border-radius: 50%; -fx-background-color: #059862;" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="ipAddress" layoutX="20.0" layoutY="294.0" prefHeight="139.0" prefWidth="367.0" promptText="address" />
+            <TextField fx:id="ipTelephone" layoutX="20.0" layoutY="204.0" prefHeight="39.0" prefWidth="164.0" promptText="telephone" />
+            <DatePicker fx:id="ipDob" layoutX="215.0" layoutY="204.0" prefHeight="39.0" prefWidth="172.0" promptText="date of birth" />
+            <TextField fx:id="ipEmail" layoutX="20.0" layoutY="126.0" prefHeight="39.0" prefWidth="367.0" promptText="email" />
+            <TextField fx:id="ipFullName" layoutX="20.0" layoutY="64.0" prefHeight="39.0" prefWidth="367.0" promptText="Full Name" />
+            <Text layoutX="20.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit student">
+               <font>
+                  <Font name="Tw Cen MT" size="31.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="ipClass" layoutX="20.0" layoutY="433.0" prefWidth="150.0" />
+         </children>
+         <effect>
+            <DropShadow color="#d0c3c3" height="28.0" offsetY="4.0" radius="14.0" width="30.0" />
+         </effect>
+      </Pane>
+      <Button layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToStudent" prefHeight="31.0" prefWidth="35.0" style="-fx-background-color: #059862;" text="&lt;" textFill="WHITE" />
+   </children>
+</Pane>

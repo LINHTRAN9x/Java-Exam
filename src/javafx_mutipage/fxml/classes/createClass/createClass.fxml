@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:controller="javafx_mutipage.controllers.classes.CreateController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="197.0" layoutY="125.0" prefHeight="351.0" prefWidth="407.0" style="-fx-border-style: solid; -fx-border-color: #D8DCE1; -fx-background-color: #fff; -fx-border-radius: 10px;">
+         <children>
+            <Button onAction="#submit" layoutX="20.0" layoutY="240.0" mnemonicParsing="false"  prefHeight="48.0" prefWidth="367.0" style="-fx-border-radius: 50%; -fx-background-color: #059862;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ipRoom" layoutX="20.0" layoutY="145.0" prefHeight="62.0" prefWidth="367.0" promptText="Room" />
+            <TextField fx:id="ipClassName" layoutX="20.0" layoutY="64.0" prefHeight="62.0" prefWidth="367.0" promptText="Class Name" />
+            <Text layoutX="20.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new class">
+               <font>
+                  <Font name="Tw Cen MT" size="31.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow color="#d0c3c3" height="28.0" offsetY="4.0" radius="14.0" width="30.0" />
+         </effect>
+      </Pane>
+      <Button onAction="#gotoClasses" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="35.0" style="-fx-background-color: #059862;" text="&lt;" textFill="WHITE" />
+   </children>
+</Pane>
