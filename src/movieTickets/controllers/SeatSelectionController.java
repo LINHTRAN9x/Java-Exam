@@ -163,9 +163,7 @@ public class SeatSelectionController {
 //                updateSeatStatusInDatabase(seatNumber, 1, showTimeId.getShowtimeId());
 //            }
         } else {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText("seat a ready booked!");
-            alert.show();
+            showAlert("Seat a ready booked!");
         }
 
 
@@ -181,7 +179,7 @@ public class SeatSelectionController {
             preparedStatement.setInt(3, showTimeId);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            showAlert(e.getMessage());
         }
     }
 
