@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Movies {
+public class MovieSeats {
     private int movieId;
     private String movieTitle;
     private String genre;
@@ -52,7 +52,7 @@ public class Movies {
         this.btnBuy = btnBuy;
     }
 
-    public Movies(int movieId, String movieTitle, String genre, LocalDate rd, int duration,String imagePath) {
+    public MovieSeats(int movieId, String movieTitle, String genre, LocalDate rd, int duration, String imagePath) {
         this.movieId = movieId;
         this.movieTitle = movieTitle;
         this.genre = genre;

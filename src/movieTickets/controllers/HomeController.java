@@ -7,8 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import movieTickets.entity.Movies;
-import movieTickets.dao.SeatsDAO;
+import movieTickets.entity.MovieSeats;
+import movieTickets.dao.MoviesDAO;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -16,27 +16,27 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
 
-    public TableView<Movies> tbView;
-    public TableColumn<Movies,String> tcMovie;
-    public TableColumn<Movies,String> tcGenre;
-    public TableColumn<Movies, LocalDate> tcRd;
-    public TableColumn<Movies,Integer> tcDuration;
+    public TableView<MovieSeats> tbView;
+    public TableColumn<MovieSeats,String> tcMovie;
+    public TableColumn<MovieSeats,String> tcGenre;
+    public TableColumn<MovieSeats, LocalDate> tcRd;
+    public TableColumn<MovieSeats,Integer> tcDuration;
 
-    public TableColumn<Movies, Button> tcBuy;
+    public TableColumn<MovieSeats, Button> tcBuy;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        tcMovie.setCellValueFactory(new PropertyValueFactory<Movies,String>("movieTitle"));
-        tcGenre.setCellValueFactory(new PropertyValueFactory<Movies,String>("genre"));
-        tcRd.setCellValueFactory(new PropertyValueFactory<Movies,LocalDate>("rd"));
-        tcDuration.setCellValueFactory(new PropertyValueFactory<Movies,Integer>("duration"));
-        tcBuy.setCellValueFactory(new PropertyValueFactory<Movies,Button>("btnBuy"));
+        tcMovie.setCellValueFactory(new PropertyValueFactory<MovieSeats,String>("movieTitle"));
+        tcGenre.setCellValueFactory(new PropertyValueFactory<MovieSeats,String>("genre"));
+        tcRd.setCellValueFactory(new PropertyValueFactory<MovieSeats,LocalDate>("rd"));
+        tcDuration.setCellValueFactory(new PropertyValueFactory<MovieSeats,Integer>("duration"));
+        tcBuy.setCellValueFactory(new PropertyValueFactory<MovieSeats,Button>("btnBuy"));
 
-        ObservableList<Movies> om = FXCollections.observableArrayList();
+        ObservableList<MovieSeats> om = FXCollections.observableArrayList();
         //
 
         try {
-            SeatsDAO sd = new SeatsDAO();
+            MoviesDAO sd = new MoviesDAO();
             om.addAll(sd.list());
 
         }catch (Exception e){
