@@ -8,7 +8,6 @@ public class Main {
 //        SubT st1 = new SubT(); //cac thread chay song song va doc lap!
 //        st1.start();
         SubR sr = new SubR();
-        SubR sr1 = new SubR();
         Thread tr = new Thread(sr);
         tr.start();
 
