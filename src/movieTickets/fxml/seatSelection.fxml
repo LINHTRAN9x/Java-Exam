@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="header" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movieTickets.controllers.SeatSelectionController">
+   <children>
+      <Pane layoutX="340.0" layoutY="110.0" prefHeight="573.0" prefWidth="598.0" style="-fx-border-color: gray;">
+         <children>
+         <GridPane fx:id="gridPane" alignment="CENTER" hgap="20.0" layoutX="20.0" layoutY="130.0" vgap="20.0">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+               <effect>
+                  <DropShadow color="#dddada" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+         </GridPane>
+            <Pane layoutX="22.0" layoutY="21.0" prefHeight="20.0" prefWidth="554.0" style="-fx-background-color: #333;">
+               <children>
+                  <Text fill="WHITE" layoutX="243.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONITOR" />
+               </children>
+               <effect>
+                  <Reflection fraction="0.68" topOpacity="0.27" />
+               </effect>
+            </Pane>
+            <Pane layoutX="200.0" layoutY="16.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #333;" />
+            <Pane layoutX="190.0" layoutY="521.0" prefHeight="20.0" prefWidth="21.0" style="-fx-background-color: #D73F0F;" />
+            <Pane layoutX="328.0" layoutY="521.0" prefHeight="20.0" prefWidth="21.0" style="-fx-background-color: #D9D9D9;" />
+            <Text fx:id="txtSeatBooked" layoutX="212.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ghế đã mua">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtSeatEmpty" layoutX="349.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ghế còn trống">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Line fx:id="seatLine" endX="495.0" layoutX="101.0" layoutY="500.0" startX="-100.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="937.0" layoutY="52.0" prefHeight="631.0" prefWidth="311.0" style="-fx-border-color: grey;">
+         <children>
+            <Pane fx:id="ticketBg1" layoutX="14.0" layoutY="9.0" prefHeight="533.0" prefWidth="282.0" style="-fx-background-color: #F0DCBB;">
+
+            </Pane>
+            <Pane fx:id="ticketBg2" layoutX="6.0" layoutY="17.0" prefHeight="512.0" prefWidth="300.0" style="-fx-background-color: #F0DCBB;">
+               <children>
+                  <Pane fx:id="ticketBg3" layoutX="20.0" layoutY="-15.0" prefHeight="551.0" prefWidth="259.0" style="-fx-background-color: #F0DCBB; -fx-border-radius: 500px;">
+                     <children>
+                        <ImageView fx:id="imgView" fitHeight="159.0" fitWidth="265.0" layoutX="-2.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              
+                           </image></ImageView>
+
+
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+
+            <TextField fx:id="txtSt" editable="false" layoutX="104.0" layoutY="248.0" prefHeight="33.0" prefWidth="174.0" style="-fx-border-color: #fff; -fx-background-color: #F0DCBB;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <TextField fx:id="txtEt" editable="false" layoutX="102.0" layoutY="310.0" prefHeight="39.0" prefWidth="174.0" style="-fx-border-color: #fff; -fx-background-color: #F0DCBB;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextField>
+            <Text fx:id="txtTicketStart" layoutX="30.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time:">
+               <font>
+                  <Font name="Bernard MT Condensed" size="16.0" />
+               </font></Text>
+            <Text fx:id="txtTicketEnd" layoutX="30.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time:">
+               <font>
+                  <Font name="Bernard MT Condensed" size="16.0" />
+               </font></Text>
+            <Text fx:id="txtTicketPos" layoutX="30.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat position:">
+               <font>
+                  <Font name="Bernard MT Condensed" size="16.0" />
+               </font></Text>
+            <Text fx:id="txtMovieName" layoutX="12.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Movie Name)">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="seatPosition" editable="false" layoutX="30.0" layoutY="396.0" prefHeight="131.0" prefWidth="259.0" style="-fx-wrap-text: wrap; -fx-background-color: #F0DCBB;">
+               <font>
+                  <Font name="Bernard MT Condensed" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor></TextArea>
+         </children></Pane>
+      <Pane layoutX="30.0" layoutY="52.0" prefHeight="631.0" prefWidth="311.0" style="-fx-border-color: grey;">
+         <children>
+            <ScrollPane layoutX="-6.0" prefHeight="631.0" prefWidth="317.0" style="-fx-border-color: grey;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbView" layoutX="-1.0" prefHeight="652.0" prefWidth="316.0" style="-fx-border-color: grey;">
+                          <columns>
+                            <TableColumn fx:id="tcSTime" prefWidth="150.0" text="StartTime" />
+                            <TableColumn fx:id="tcETime" prefWidth="162.0" text="EndTime" />
+                          </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Pane layoutX="-6.0" prefHeight="33.0" prefWidth="151.0" style="-fx-background-color: #5BB5F6;">
+               <children>
+                  <Text fill="WHITE" layoutX="38.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="147.0" prefHeight="33.0" prefWidth="163.0" style="-fx-background-color: #D73F0F;">
+               <children>
+                  <Text fill="WHITE" layoutX="43.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane layoutX="340.0" layoutY="52.0" prefHeight="59.0" prefWidth="598.0" style="-fx-border-color: grey;" />
+      <Pane layoutX="-1.0" layoutY="726.0" prefHeight="109.0" prefWidth="1287.0" style="-fx-border-color: grey;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button layoutX="1011.0" layoutY="34.0" mnemonicParsing="false" style="-fx-background-color: #2D3648;" text="Invoice Printing &gt;" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#686565" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#backHome" style="-fx-background-color: rgba(0,0,0,.7);" text="&lt;Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Pane layoutX="61.0" layoutY="-57.0" prefHeight="73.0" prefWidth="200.0" />
+      <ToggleButton fx:id="lightMode" layoutX="1196.0" layoutY="12.0" mnemonicParsing="false" onAction="#lightMode" style="-fx-background-color: #D9D9D9;" text="☀">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ToggleButton>
+      <ToggleButton fx:id="darkMode" layoutX="1231.0" layoutY="12.0" mnemonicParsing="false" onAction="#darkMode" prefHeight="31.0" prefWidth="35.0" style="-fx-background-color: #D9D9D9;" text="🌙">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ToggleButton>
+<!--    <Button fx:id="seatButton" layoutX="8.0" layoutY="8.0" minHeight="50" minWidth="50" text="Seat">-->
+<!--        <font>-->
+<!--            <Font size="12.0" />-->
+<!--        </font>-->
+<!--    </Button>-->
+   </children>
+</Pane>

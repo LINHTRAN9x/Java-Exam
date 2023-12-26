@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movieTickets.controllers.HomeController">
+   <children>
+      <Text layoutX="564.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie list">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tbView" layoutX="14.0" layoutY="82.0" prefHeight="744.0" prefWidth="1255.0">
+        <columns>
+          <TableColumn fx:id="tcMovie" prefWidth="308.0" text="Movie" />
+          <TableColumn fx:id="tcGenre" prefWidth="189.0" text="genre" />
+            <TableColumn fx:id="tcRd" prefWidth="293.0" text="release_date" />
+            <TableColumn fx:id="tcDuration" prefWidth="243.0" text="duration" />
+            <TableColumn fx:id="tcBuy" prefWidth="268.0" text="aution" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
