@@ -7,8 +7,21 @@ public class AddressBook {
 
     public void addContact(String name, String phoneNumber) {
         Contact contact = new Contact(name, phoneNumber);
+        while (!isNumber(phoneNumber)) {
+            System.out.print("Phone Number must a Number. Please enter again.");
+            return;
+        }
         contacts.put(name, contact);
         System.out.println("Contact added successfully!");
+    }
+
+    private boolean isNumber(String str) {
+        try {
+            Long.parseLong(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
     public void findContact(String name) {
