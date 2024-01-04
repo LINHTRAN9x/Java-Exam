@@ -1,4 +1,4 @@
-package address_book;
+package addressbook;
 import java.util.Scanner;
 
 public class Main {

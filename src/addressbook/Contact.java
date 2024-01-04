@@ -1,4 +1,4 @@
-package address_book;
+package addressbook;
 
 public class Contact {
     private String name;
