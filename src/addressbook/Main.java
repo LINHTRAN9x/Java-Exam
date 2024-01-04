@@ -24,7 +24,7 @@ public class Main {
                     String name = scan.nextLine();
                     System.out.print("Enter Phone: ");
                     String phone = scan.nextLine();
-                    addressBook.addContact(name, phone);
+                    System.out.println("Save this address?");
                     break;
                 case 2:
                     System.out.print("Enter Name to find: ");
