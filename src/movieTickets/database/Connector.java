@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Connector {
     private static Connection conn;
 
-    private static Connector _instance;
+    private static Connector _instance; //Singleton pattern
 
     private Connector() {
         //tao ket noi voi database.

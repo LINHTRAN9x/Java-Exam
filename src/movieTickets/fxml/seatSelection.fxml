@@ -68,10 +68,8 @@
                      <children>
                         <ImageView fx:id="imgView" fitHeight="159.0" fitWidth="265.0" layoutX="-2.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              
-                           </image></ImageView>
-
-
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </children>

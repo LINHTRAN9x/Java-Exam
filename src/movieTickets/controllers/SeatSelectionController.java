@@ -232,7 +232,6 @@ public class SeatSelectionController {
         txtEt.setStyle("-fx-background-color: #2A2A2A; -fx-text-fill: #fff");
         seatLine.setStroke(Paint.valueOf("#fff"));
 
-
     }
 
 
